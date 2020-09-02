@@ -1517,6 +1517,8 @@ declare function BlzEnableUIAutoPosition(enable: boolean): void;
 declare function BlzHideOriginFrames(enable: boolean): void;
 declare function BlzConvertColor(a: number, r: number, g: number, b: number): number;
 declare function BlzLoadTOCFile(TOCFile: string): boolean;
+declare function BlzFrameGetChild(parent: framehandle, index: number): framehandle;
+declare function BlzFrameGetChildrenCount(parent: framehandle): number;
 declare function BlzCreateFrame(name: string, owner: framehandle, priority: number, createContext: number): framehandle;
 declare function BlzCreateSimpleFrame(name: string, owner: framehandle, createContext: number): framehandle;
 declare function BlzCreateFrameByType(typeName: string, name: string, owner: framehandle, inherits: string, createContext: number): framehandle;
