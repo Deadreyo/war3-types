@@ -1512,6 +1512,8 @@ declare function BlzShowSkyBox(show: boolean): void;
 declare function BlzStartRecording(fps: number): void;
 declare function BlzEndRecording(): void;
 declare function BlzShowUnitTeamGlow(whichUnit: unit, show: boolean): void;
+declare function BlzFrameGetChildrenCount(parent: framehandle): number;
+declare function BlzFrameGetChild(parent: framehandle, index: number): framehandle;
 declare function BlzGetOriginFrame(frameType: originframetype, index: number): framehandle;
 declare function BlzEnableUIAutoPosition(enable: boolean): void;
 declare function BlzHideOriginFrames(enable: boolean): void;
